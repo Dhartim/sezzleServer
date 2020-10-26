@@ -1,11 +1,10 @@
-const webSocketsServerPort = 8000;
 const webSocketServer = require('websocket').server;
 const http = require('http');
 
 //create http server
 const server = http.createServer();
 server.listen(process.env.PORT || 5000)
-console.log("listening on port" + webSocketsServerPort);
+console.log("listening on port ....");
 
 const webSocket = new webSocketServer({
     httpServer : server
